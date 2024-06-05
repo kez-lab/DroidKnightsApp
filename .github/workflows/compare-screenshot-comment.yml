@@ -10,19 +10,25 @@ on:
 permissions: {}
 
 jobs:
-  Comment-CompareScreenshot:
-    if: >
-      github.event.workflow_run.event == 'pull_request' &&
-      github.event.workflow_run.conclusion == 'success'
-
-    timeout-minutes: 20
+  comment-compare-screenshot-test-results:
+    name: Screenshot Test Results
+    runs-on: ubuntu-latest
+    if: github.event.workflow_run.conclusion != 'skipped'
 
     permissions:
-      actions: read
-      contents: write
+      checks: write
+
+      # needed unless run with comment_mode: off
       pull-requests: write
 
-    runs-on: ubuntu-latest
+      # only needed for private repository
+      contents: read
+
+      # only needed for private repository
+      issues: read
+
+      # required by download step to access artifacts API
+      actions: read
 
     steps:
       - uses: dawidd6/action-download-artifact@v2.27.0
