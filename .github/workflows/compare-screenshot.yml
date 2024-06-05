@@ -2,8 +2,7 @@ name: CompareScreenshot
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
 
 permissions: {}
@@ -14,8 +13,8 @@ jobs:
     timeout-minutes: 20
 
     permissions:
-      contents: read # for clone
-      actions: write # for upload-artifact
+      contents: read
+      actions: write
 
     steps:
       - name: Checkout
@@ -28,12 +27,11 @@ jobs:
           java-version: 17
 
       - name: Setup Gradle
-        uses: gradle/gradle-build-action@4c39dd82cd5e1ec7c6fa0173bb41b4b6bb3b86ff # v3.3.2
+        uses: gradle/gradle-build-action@v3.3.2
         with:
           gradle-version: wrapper
 
-
-      - uses: dawidd6/action-download-artifact@246dbf436b23d7c49e21a7ab8204ca9ecd1fe615
+      - uses: dawidd6/action-download-artifact@v2.27.0
         continue-on-error: true
         with:
           name: screenshot
@@ -74,6 +72,7 @@ jobs:
         run: |
           mkdir -p ./pr
           echo ${{ github.event.number }} > ./pr/NR
+
       - uses: actions/upload-artifact@v4
         with:
           name: pr
