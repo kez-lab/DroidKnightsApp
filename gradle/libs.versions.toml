@@ -1,5 +1,5 @@
 [versions]
-agp = "8.10.0"
+agp = "8.6.1"
 android-compileSdk = "35"
 android-minSdk = "24"
 android-targetSdk = "35"
@@ -25,6 +25,8 @@ logback = "1.5.18"
 detekt = "1.23.8"
 twitterComposeRule = "0.0.26"
 coil = "3.2.0"
+screenshot = "0.0.1-alpha09"
+androidx-uiTest = "1.8.2"
 
 [libraries]
 # Kotlin
@@ -48,6 +50,9 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
 androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling"}
+androidx-uitest-testManifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "androidx-uiTest" }
+androidx-uitest-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "androidx-uiTest" }
 
 #coil
 coil = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
@@ -93,3 +98,4 @@ ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+screenshot = { id = "com.android.compose.screenshot", version.ref = "screenshot"}

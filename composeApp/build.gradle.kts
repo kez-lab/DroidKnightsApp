@@ -1,14 +1,28 @@
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
+import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSetTree
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 plugins {
     alias(libs.plugins.androidApplication)
     id("droidknights.kotlin.multiplatform")
     id("droidknights.compose.multiplatform")
+    alias(libs.plugins.screenshot)
 }
 
 kotlin {
+
+    androidTarget {
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_17)
+        }
+
+        //https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-test.html
+        @OptIn(ExperimentalKotlinGradlePluginApi::class)
+        instrumentedTestVariant.sourceSetTree.set(KotlinSourceSetTree.test)
+    }
     targets
         .filterIsInstance<KotlinNativeTarget>()
         .forEach { target ->
@@ -72,6 +86,8 @@ android {
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         getByName("release") {
@@ -83,10 +99,35 @@ android {
             )
         }
     }
+
+    testOptions {
+        //noinspection WrongGradleMethod
+        screenshotTests {
+            imageDifferenceThreshold = 0.0001f
+        }
+    }
+    experimentalProperties["android.experimental.enableScreenshotTest"] = true
 }
 
 dependencies {
+    androidTestImplementation(libs.androidx.uitest.junit4)
+    debugImplementation(libs.androidx.uitest.testManifest)
     debugImplementation(compose.uiTooling)
+
+    screenshotTestImplementation(libs.androidx.compose.ui.tooling)
+    screenshotTestImplementation(compose.runtime)
+    screenshotTestImplementation(compose.material)
+    screenshotTestImplementation(compose.foundation)
+    screenshotTestImplementation(compose.components.uiToolingPreview)
+    screenshotTestImplementation(compose.components.resources)
+
+    screenshotTestImplementation(projects.core.designsystem)
+    screenshotTestImplementation(projects.feature.bookmark)
+    screenshotTestImplementation(projects.feature.contributor)
+    screenshotTestImplementation(projects.feature.home)
+    screenshotTestImplementation(projects.feature.main)
+    screenshotTestImplementation(projects.feature.session)
+    screenshotTestImplementation(projects.feature.setting)
 }
 
 compose.desktop {

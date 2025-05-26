@@ -19,7 +19,7 @@ import com.droidknights.app.feature.home.components.HomeSponsorCard
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
-internal fun HomeScreen(
+fun HomeScreen(
     onSessionClick: () -> Unit,
     onContributorClick: () -> Unit,
     modifier: Modifier = Modifier,
