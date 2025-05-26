@@ -112,9 +112,9 @@ android {
 dependencies {
     androidTestImplementation(libs.androidx.uitest.junit4)
     debugImplementation(libs.androidx.uitest.testManifest)
-    debugImplementation(compose.uiTooling)
+    debugImplementation(libs.ui.tooling)
 
-    screenshotTestImplementation(libs.androidx.compose.ui.tooling)
+    screenshotTestImplementation(libs.ui.tooling)
     screenshotTestImplementation(compose.runtime)
     screenshotTestImplementation(compose.material)
     screenshotTestImplementation(compose.foundation)
