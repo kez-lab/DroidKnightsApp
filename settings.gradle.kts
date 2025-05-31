@@ -62,3 +62,4 @@ include(
     ":feature:contributor",
     ":feature:bookmark",
 )
+include(":core:testing")

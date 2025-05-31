@@ -9,7 +9,6 @@ plugins {
     alias(libs.plugins.androidApplication)
     id("droidknights.kotlin.multiplatform")
     id("droidknights.compose.multiplatform")
-    alias(libs.plugins.screenshot)
 }
 
 kotlin {
@@ -99,35 +98,14 @@ android {
             )
         }
     }
-
-    testOptions {
-        //noinspection WrongGradleMethod
-        screenshotTests {
-            imageDifferenceThreshold = 0.0001f
-        }
-    }
-    experimentalProperties["android.experimental.enableScreenshotTest"] = true
 }
-
+compose.resources {
+    publicResClass = true
+}
 dependencies {
     androidTestImplementation(libs.androidx.uitest.junit4)
     debugImplementation(libs.androidx.uitest.testManifest)
     debugImplementation(libs.ui.tooling)
-
-    screenshotTestImplementation(libs.ui.tooling)
-    screenshotTestImplementation(compose.runtime)
-    screenshotTestImplementation(compose.material)
-    screenshotTestImplementation(compose.foundation)
-    screenshotTestImplementation(compose.components.uiToolingPreview)
-    screenshotTestImplementation(compose.components.resources)
-
-    screenshotTestImplementation(projects.core.designsystem)
-    screenshotTestImplementation(projects.feature.bookmark)
-    screenshotTestImplementation(projects.feature.contributor)
-    screenshotTestImplementation(projects.feature.home)
-    screenshotTestImplementation(projects.feature.main)
-    screenshotTestImplementation(projects.feature.session)
-    screenshotTestImplementation(projects.feature.setting)
 }
 
 compose.desktop {
@@ -152,4 +130,10 @@ val buildWebApp by tasks.registering(Copy::class) {
     into(layout.buildDirectory.dir("webApp"))
 
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+
+fun Project.screenshotTestImplementation(
+    dependencyNotation: Any
+): Dependency? {
+    return this.dependencies.add("screenshotTestImplementation", dependencyNotation)
 }

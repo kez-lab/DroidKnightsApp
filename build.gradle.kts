@@ -10,4 +10,5 @@ plugins {
     alias(libs.plugins.kotlinxSerialization) apply false
     alias(libs.plugins.detekt) apply false
     alias(libs.plugins.screenshot) apply false
+    alias(libs.plugins.kotlinAndroid) apply false
 }
