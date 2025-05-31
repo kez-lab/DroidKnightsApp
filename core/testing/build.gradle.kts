@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinAndroid)
+    alias(libs.plugins.composeCompiler)
     alias(libs.plugins.screenshot)
 }
 
@@ -39,6 +40,9 @@ android {
         }
     }
     experimentalProperties["android.experimental.enableScreenshotTest"] = true
+    buildFeatures {
+        compose = true
+    }
 }
 
 dependencies {
@@ -51,8 +55,15 @@ dependencies {
     androidTestImplementation(libs.androidx.test.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    implementation(platform("androidx.compose:compose-bom:2025.05.01"))
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.material:material")
+    implementation("androidx.compose.foundation:foundation")
+    implementation("androidx.compose.foundation:foundation-layout")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    debugImplementation("androidx.compose.ui:ui-tooling")
+
     screenshotTestImplementation(libs.androidx.core.ktx)
-    screenshotTestImplementation("androidx.compose.foundation:foundation:1.8.1")
     screenshotTestImplementation(libs.androidx.appcompat)
     screenshotTestImplementation(libs.androidx.material)
     screenshotTestImplementation(libs.androidx.activity.compose)
