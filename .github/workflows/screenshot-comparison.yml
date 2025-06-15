@@ -1,4 +1,4 @@
-name: screenshot-comparison
+name: Screenshot Comparison
 
 on:
   pull_request:

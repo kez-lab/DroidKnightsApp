@@ -1,4 +1,4 @@
-name: screenshot-comparison-comment
+name: Screenshot Comparison Comment
 
 on:
   workflow_run:
@@ -38,11 +38,10 @@ jobs:
         shell: bash
         run: |
           echo "pull_request_number=$(cat NR)" >> "$GITHUB_OUTPUT"
-      - name: main checkout
-        id: checkout-main
-        uses: actions/checkout@v4
-        with:
-          ref: main
+      - uses: actions/checkout@v4
+      - run: |
+          git checkout --orphan companion_branch
+          git rm -rf .
       - id: switch-companion-branch
         env:
           BRANCH_NAME: companion_${{ github.event.workflow_run.head_branch }}
