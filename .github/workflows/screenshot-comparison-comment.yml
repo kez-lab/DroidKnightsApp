@@ -56,6 +56,7 @@ jobs:
           run-id: ${{ github.event.workflow_run.id }}
           name: screenshot-diff-reports
           path: screenshot-diff-reports
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       - id: check-if-there-are-valid-files
         name: Check if there are valid files
         shell: bash
