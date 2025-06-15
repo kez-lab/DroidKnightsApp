@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-06-15T05:06:08.855Z" hostname="fv-az1696-920" time="29.181">
+  <properties/>
+  <testcase name="test[com.droidknights.app.core.designsystem.components.ChipKt_ChipPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="28.308"/>
+  <testcase name="test[com.droidknights.app.core.designsystem.components.TopAppBarKt_KnightsTopAppBarPreviewClose]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.502"/>
+  <testcase name="test[com.droidknights.app.core.designsystem.components.TopAppBarKt_KnightsTopAppBarPreviewBack]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.362"/>
+  <system-out><![CDATA[Capturing preview: ChipPreview
+Roborazzi: ChipPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=237456, width=291, height=816) changed:false
+Capturing preview: KnightsTopAppBarPreviewClose
+Roborazzi: KnightsTopAppBarPreviewClose.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=142560, width=1080, height=132) changed:false
+Capturing preview: KnightsTopAppBarPreviewBack
+Roborazzi: KnightsTopAppBarPreviewBack.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=142560, width=1080, height=132) changed:false
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-06-15T05:06:08.965Z" hostname="fv-az1696-920" time="34.588">
+  <properties/>
+  <testcase name="test[com.droidknights.app.feature.bookmark.BookmarkScreenKt_BookmarkScreenLightPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="28.59"/>
+  <testcase name="test[com.droidknights.app.feature.bookmark.BookmarkScreenKt_BookmarkScreenDarkPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="1.326"/>
+  <testcase name="test[com.droidknights.app.feature.bookmark.component.BookmarkCardKt_BookmarkCardLightPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.564"/>
+  <testcase name="test[com.droidknights.app.feature.bookmark.component.BookmarkCardKt_BookmarkCardDarkPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.499"/>
+  <testcase name="test[com.droidknights.app.feature.bookmark.component.BookmarkItemKt_BookmarkItemPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.805"/>
+  <testcase name="test[com.droidknights.app.feature.bookmark.component.BookmarkTimelineKt_BookmarkTimelineItemLightPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.472"/>
+  <testcase name="test[com.droidknights.app.feature.bookmark.component.BookmarkTimelineKt_BookmarkTimelineItemDarkPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.36"/>
+  <testcase name="test[com.droidknights.app.feature.bookmark.component.BookmarkTopAppBarKt_BookmarkTopAppBarLightPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.375"/>
+  <testcase name="test[com.droidknights.app.feature.bookmark.component.BookmarkTopAppBarKt_BookmarkTopAppBarDarkPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.366"/>
+  <testcase name="test[com.droidknights.app.feature.bookmark.component.BookmarkTopAppBarKt_BookmarkTopAppBarEditModeLightPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.229"/>
+  <testcase name="test[com.droidknights.app.feature.bookmark.component.BookmarkTopAppBarKt_BookmarkTopAppBarEditModeDarkPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.185"/>
+  <testcase name="test[com.droidknights.app.feature.bookmark.component.EditModeLeadingItemKt_CheckedEditModeLeadingItemPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.162"/>
+  <testcase name="test[com.droidknights.app.feature.bookmark.component.EditModeLeadingItemKt_UncheckedEditModeLeadingItemPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.215"/>
+  <testcase name="test[com.droidknights.app.feature.bookmark.component.RemoveBookmarkSnackBarKt_BookmarkStatePopupPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.381"/>
+  <system-out><![CDATA[Capturing preview: BookmarkScreenLightPreview
+Roborazzi: BookmarkScreenLightPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=2527200, width=1080, height=2340) changed:false
+Capturing preview: BookmarkScreenDarkPreview
+Roborazzi: BookmarkScreenDarkPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=2527200, width=1080, height=2340) changed:false
+Capturing preview: BookmarkCardLightPreview
+Roborazzi: BookmarkCardLightPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=300240, width=1080, height=278) changed:false
+Capturing preview: BookmarkCardDarkPreview
+Roborazzi: BookmarkCardDarkPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=300240, width=1080, height=278) changed:false
+Capturing preview: BookmarkItemPreview
+Roborazzi: BookmarkItemPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=695520, width=1080, height=644) changed:false
+Capturing preview: BookmarkTimelineItemLightPreview
+Roborazzi: BookmarkTimelineItemLightPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=21301, width=119, height=179) changed:false
+Capturing preview: BookmarkTimelineItemDarkPreview
+Roborazzi: BookmarkTimelineItemDarkPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=21301, width=119, height=179) changed:false
+Capturing preview: BookmarkTopAppBarLightPreview
+Roborazzi: BookmarkTopAppBarLightPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=142560, width=1080, height=132) changed:false
+Capturing preview: BookmarkTopAppBarDarkPreview
+Roborazzi: BookmarkTopAppBarDarkPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=142560, width=1080, height=132) changed:false
+Capturing preview: BookmarkTopAppBarEditModeLightPreview
+Roborazzi: BookmarkTopAppBarEditModeLightPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=142560, width=1080, height=132) changed:false
+Capturing preview: BookmarkTopAppBarEditModeDarkPreview
+Roborazzi: BookmarkTopAppBarEditModeDarkPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=142560, width=1080, height=132) changed:false
+Capturing preview: CheckedEditModeLeadingItemPreview
+Roborazzi: CheckedEditModeLeadingItemPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=10956, width=166, height=66) changed:false
+Capturing preview: UncheckedEditModeLeadingItemPreview
+Roborazzi: UncheckedEditModeLeadingItemPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=10956, width=166, height=66) changed:false
+Capturing preview: BookmarkStatePopupPreview
+Roborazzi: BookmarkStatePopupPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=149040, width=1080, height=138) changed:false
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

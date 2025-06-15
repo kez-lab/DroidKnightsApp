@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.droidknights.app.feature.setting.test.setting-mergeDebugUnitTestResources-65:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "/home/runner/.gradle/caches/8.14/transforms/cdc1c3bb0108a6b3fa9b13ab1cb255ca/transformed/material3-release/res/values-v30/values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/runner/work/DroidKnightsApp/DroidKnightsApp/core/model/model-contributor/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3721615903358670792.xml:2:13-83
+INJECTED from /home/runner/work/DroidKnightsApp/DroidKnightsApp/core/model/model-contributor/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3721615903358670792.xml:2:13-83
+	package
+		INJECTED from /home/runner/work/DroidKnightsApp/DroidKnightsApp/core/model/model-contributor/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3721615903358670792.xml
+	xmlns:android
+		ADDED from /home/runner/work/DroidKnightsApp/DroidKnightsApp/core/model/model-contributor/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3721615903358670792.xml:2:23-81
+uses-sdk
+INJECTED from /home/runner/work/DroidKnightsApp/DroidKnightsApp/core/model/model-contributor/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3721615903358670792.xml reason: use-sdk injection requested
+INJECTED from /home/runner/work/DroidKnightsApp/DroidKnightsApp/core/model/model-contributor/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3721615903358670792.xml
+INJECTED from /home/runner/work/DroidKnightsApp/DroidKnightsApp/core/model/model-contributor/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3721615903358670792.xml
+	android:targetSdkVersion
+		INJECTED from /home/runner/work/DroidKnightsApp/DroidKnightsApp/core/model/model-contributor/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3721615903358670792.xml
+	android:minSdkVersion
+		INJECTED from /home/runner/work/DroidKnightsApp/DroidKnightsApp/core/model/model-contributor/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3721615903358670792.xml

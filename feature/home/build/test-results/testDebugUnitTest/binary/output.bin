@@ -1,0 +1,12 @@
+%Capturing preview: HomeScreenPreview
+îRoborazzi: HomeScreenPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=2527200, width=1080, height=2340) changed:false
+.Capturing preview: HomeContributorCardPreview
+õRoborazzi: HomeContributorCardPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=415800, width=1080, height=385) changed:false
+&Capturing preview: HomeMapCardPreview
+ìRoborazzi: HomeMapCardPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=612360, width=1080, height=567) changed:false
+*Capturing preview: HomeSessionCardPreview
+óRoborazzi: HomeSessionCardPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=452520, width=1080, height=419) changed:false
+/Capturing preview: HomeSponsorCardLightPreview
+ùRoborazzi: HomeSponsorCardLightPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=1040040, width=1080, height=963) changed:false
+.Capturing preview: HomeSponsorCardDarkPreview
+úRoborazzi: HomeSponsorCardDarkPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=1040040, width=1080, height=963) changed:false

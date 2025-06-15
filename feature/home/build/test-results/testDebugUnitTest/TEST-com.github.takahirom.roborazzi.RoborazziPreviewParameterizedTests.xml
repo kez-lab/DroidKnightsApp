@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-06-15T05:06:09.838Z" hostname="fv-az1696-920" time="49.224">
+  <properties/>
+  <testcase name="test[com.droidknights.app.feature.home.HomeScreenKt_HomeScreenPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="36.074"/>
+  <testcase name="test[com.droidknights.app.feature.home.components.HomeContributorCardKt_HomeContributorCardPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.414"/>
+  <testcase name="test[com.droidknights.app.feature.home.components.HomeMapCardKt_HomeMapCardPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.53"/>
+  <testcase name="test[com.droidknights.app.feature.home.components.HomeSessionCardKt_HomeSessionCardPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="0.466"/>
+  <testcase name="test[com.droidknights.app.feature.home.components.HomeSponsorCardKt_HomeSponsorCardLightPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="6.775"/>
+  <testcase name="test[com.droidknights.app.feature.home.components.HomeSponsorCardKt_HomeSponsorCardDarkPreview]" classname="com.github.takahirom.roborazzi.RoborazziPreviewParameterizedTests" time="4.942"/>
+  <system-out><![CDATA[Capturing preview: HomeScreenPreview
+Roborazzi: HomeScreenPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=2527200, width=1080, height=2340) changed:false
+Capturing preview: HomeContributorCardPreview
+Roborazzi: HomeContributorCardPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=415800, width=1080, height=385) changed:false
+Capturing preview: HomeMapCardPreview
+Roborazzi: HomeMapCardPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=612360, width=1080, height=567) changed:false
+Capturing preview: HomeSessionCardPreview
+Roborazzi: HomeSessionCardPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=452520, width=1080, height=419) changed:false
+Capturing preview: HomeSponsorCardLightPreview
+Roborazzi: HomeSponsorCardLightPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=1040040, width=1080, height=963) changed:false
+Capturing preview: HomeSponsorCardDarkPreview
+Roborazzi: HomeSponsorCardDarkPreview.png The differ result :ComparisonResult(pixelDifferences=0, pixelCount=1040040, width=1080, height=963) changed:false
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
