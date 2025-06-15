@@ -25,7 +25,7 @@ internal fun HomeScreen(
     onOrganizationSponsorClick: (String) -> Unit,
     onMapClick: () -> Unit,
     modifier: Modifier = Modifier,
-    homeViewModel: HomeViewModel = koinViewModel(),
+    // homeViewModel: HomeViewModel = koinViewModel(),
 ) {
     Column(
         modifier = modifier
@@ -37,7 +37,7 @@ internal fun HomeScreen(
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
         HomeSessionCard(
-            onClick = homeViewModel::navigateSession,
+            onClick = {},
             modifier = Modifier.fillMaxWidth(),
         )
         HomeContributorCard(
