@@ -33,6 +33,7 @@ jobs:
         with:
           name: pr
           run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       - id: get-pull-request-number
         name: Get pull request number
         shell: bash
