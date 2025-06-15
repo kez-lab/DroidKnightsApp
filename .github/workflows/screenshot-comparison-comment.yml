@@ -32,7 +32,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: pr
-          run_id: ${{ github.event.workflow_run.id }}
+          run-id: ${{ github.event.workflow_run.id }}
       - id: get-pull-request-number
         name: Get pull request number
         shell: bash
@@ -52,7 +52,7 @@ jobs:
           git rm -rf .
       - uses: actions/download-artifact@v4
         with:
-          run_id: ${{ github.event.workflow_run.id }}
+          run-id: ${{ github.event.workflow_run.id }}
           name: screenshot-diff-reports
           path: screenshot-diff-reports
       - id: check-if-there-are-valid-files
