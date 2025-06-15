@@ -3,7 +3,7 @@ name: Screenshot Comparison Comment
 on:
   workflow_run:
     workflows:
-      - screenshot-comparison
+      - Screenshot Comparison
     types:
       - completed
 
