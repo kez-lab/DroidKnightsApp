@@ -213,7 +213,7 @@ private fun SessionCardPreview() {
             Session(
                 id = "1",
                 title = "세션 타이틀 1",
-                content = "세션 설명 세션 설명 세션 설명 세션 설명 세션 설명 세션 설명 ",
+                content = "테스트 세션 설명 세션 설명 세션 설명 세션 설명 세션 설명 세션 설명 ",
                 speakers = listOf(
                     Speaker(
                         name = "세션 연사자 1",
